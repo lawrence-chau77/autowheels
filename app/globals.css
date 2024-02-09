@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.pad-x-default {
+  @apply sm:px-16 md:px-12 px-6;
+}
+
+.car__card-container {
+  @apply flex flex-col py-6 px-8 justify-center items-start bg-slate-50 hover:bg-white hover:shadow-md rounded-2xl
+}
+
+.car__card-modal-button {
+  @apply hidden group-hover:flex absolute bottom-0 w-full z-10 justify-center
+}
+
+.card__detailed-dialog {
+  @apply relative w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl bg-white p-6 shadow-xl flex flex-col gap-5 transform
+}
